@@ -7,15 +7,15 @@ const getResult = () => {
     return 4+4;
 }
 
-export const FirstApp = () =>
+export const FirstApp = ( {title , subTitle} ) =>
 {
     return (
     <>
-    <h1> Hola mundo</h1>
-    <h1> { getResult() }</h1>
+    <h1> { title } { subTitle + 1 }</h1>
+    {/* <h1> { getResult() }</h1> */}
     {/* <code>{ JSON.stringify(newMessage) }</code> */}
 
-    <p>asdasd</p>
+    {/* <p>asdasd</p> */}
     </>
     );
 };
