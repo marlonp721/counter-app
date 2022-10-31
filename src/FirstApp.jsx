@@ -15,9 +15,13 @@ export const FirstApp = ( {title , value} ) =>
     const [ counter, setCounter ] = useState( value );
 
     const handleAdd = () =>{
-        // setCounter( counter + 1);
-        setCounter( (c) => c + 1 )
+        setCounter( counter + 1);
+        // setCounter( (c) => c + 1 )
     }
+
+    const handleRest = () => setCounter( counter - 1 );
+
+    const handleReset = () => setCounter( value );
 
     return (
     <>
@@ -29,6 +33,14 @@ export const FirstApp = ( {title , value} ) =>
     {/* <p>asdasd</p> */}
     <button onClick={ handleAdd }>
         +1
+    </button>
+
+    <button onClick={ handleRest }>
+        -1
+    </button>
+
+    <button onClick={ handleReset }>
+        Reset
     </button>
 
     </>
