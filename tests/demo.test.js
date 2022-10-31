@@ -8,7 +8,7 @@ describe('Pruebas en DemoComponent', () => {
     
         expect( message1 ).toBe( message2);
     
-     })
+     });
 
- })
+ });
 
