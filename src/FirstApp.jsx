@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const newMessage = {
     nombre: 'Marlon',
     apellido: 'Peralta'
@@ -19,4 +21,8 @@ export const FirstApp = ( {title , subTitle} ) =>
     </>
     );
 };
+
+FirstApp.propTypes = {
+    title: PropTypes.string.isRequired
+}
 
